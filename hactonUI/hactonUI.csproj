@@ -129,5 +129,8 @@
   <ItemGroup>
     <Resource Include="icons\config.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\gondalogo_filterd3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

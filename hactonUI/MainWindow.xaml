@@ -41,8 +41,7 @@
         </Button>
         <Image HorizontalAlignment="Stretch" Margin="18,3,130,282" Source="icons/file.png" Grid.Row="1"/>
         <Button  x:Name="CloseButton" Content="x" Click="CloseButton_Click" HorizontalAlignment="Left" Margin="775,-6,-610,0" VerticalAlignment="Top" Width="25" FontSize="25" Background="{x:Null}" Height="35" FontWeight="Bold" BorderBrush="{x:Null}" RenderTransformOrigin="-7.8,4.857"/>
-        <TextBox x:Name="ImportFileName" HorizontalAlignment="Left" Height="23" Margin="265,40,-195,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="117" Source="icons/gondalogo_filterd3.png" Margin="33,10,0,0"/>
+        <TextBox x:Name="ImportFileName" HorizontalAlignment="Left" Height="23" Margin="430,75,-360,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Grid.Row="1"/>
         <Button  Content="                Analyze" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="189" Height="50" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Margin="1,75,0,195" FontWeight="Bold" FontSize="15" Grid.Row="1" Click="Button_Click_3">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
@@ -110,6 +109,11 @@
         <Image HorizontalAlignment="Stretch" Margin="14,81,124,199" Source="icons/analysis.png" Grid.Row="1"/>
         <Image HorizontalAlignment="Stretch" Margin="14,163,124,122" Source="icons/package.png" Grid.Row="1"/>
         <Image HorizontalAlignment="Stretch" Margin="13,247,125,33" Source="icons/config.png" Grid.Row="1" RenderTransformOrigin="0.533,0.6"/>
+        <Image HorizontalAlignment="Left" Height="112" VerticalAlignment="Top" Width="119" Margin="32,10,0,0" Source="icons/gondalogo_filterd3.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="icons/gondalogo_filterd3.png" Stretch="UniformToFill" Opacity="0.5"/>
+            </Image.OpacityMask>
+        </Image>
 
     </Grid>
 
