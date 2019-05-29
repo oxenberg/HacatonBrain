@@ -39,7 +39,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Image Height="50" Width="60" HorizontalAlignment="Stretch" Margin="8,125,122,275" Source="icons/file.png" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Stretch" Margin="18,3,130,282" Source="icons/file.png" Grid.Row="1"/>
         <Button  x:Name="CloseButton" Content="x" Click="CloseButton_Click" HorizontalAlignment="Left" Margin="775,-10,-610,0" VerticalAlignment="Top" Width="25" FontSize="25" Background="{x:Null}" Height="35" FontWeight="Bold" BorderBrush="{x:Null}"/>
         <TextBox x:Name="ImportFileName" HorizontalAlignment="Left" Height="23" Margin="415,75,-345,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
         <Image HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="140" Source="icons/labSymbelBlack.png" Margin="20,0,0,0"/>
@@ -107,9 +107,9 @@
             </Button.Style>
         </Button>
         <GridSplitter HorizontalAlignment="Left" Height="50" Margin="0,125,0,0" VerticalAlignment="Top" Width="5" Grid.RowSpan="2" DragDelta="GridSplitter_DragDelta" Background="#FFA04040"/>
-        <Image Height="50" Width="60" HorizontalAlignment="Stretch" Margin="8,75,122,195" Source="icons/analysis.png" Grid.Row="1"/>
-        <Image Height="50" Width="60" HorizontalAlignment="Stretch" Margin="8,160,122,110" Source="icons/package.png" Grid.Row="1"/>
-        <Image Height="50" Width="60" HorizontalAlignment="Stretch" Margin="8,240,122,30" Source="icons/config.png" Grid.Row="1" RenderTransformOrigin="0.533,0.6"/>
+        <Image HorizontalAlignment="Stretch" Margin="14,81,124,199" Source="icons/analysis.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Stretch" Margin="14,163,124,122" Source="icons/package.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Stretch" Margin="13,247,125,33" Source="icons/config.png" Grid.Row="1" RenderTransformOrigin="0.533,0.6"/>
 
     </Grid>
 
