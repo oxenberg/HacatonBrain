@@ -47,25 +47,23 @@ namespace hactonUI
 
         private void importClick(object sender, RoutedEventArgs e)
         {
-            GridMain.Children.Add(new ImportControl());
+            // Create OpenFileDialog
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
 
-          //  // Create OpenFileDialog
-          //  Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            // Set filter for file extension and default file extension
+            dlg.DefaultExt = ".txt";
+            dlg.Filter = "Text documents (.txt)|*.txt";
 
-          //  // Set filter for file extension and default file extension
-          //  dlg.DefaultExt = ".txt";
-          //  dlg.Filter = "Text documents (.txt)|*.txt";
+            // Display OpenFileDialog by calling ShowDialog method
+            Nullable<bool> result = dlg.ShowDialog();
 
-          //  // Display OpenFileDialog by calling ShowDialog method
-          //  Nullable<bool> result = dlg.ShowDialog();
-
-          //  // Get the selected file name and display in a TextBox
-          //  if (result == true)
-          //  {
-          //      // Open document
-          //      string filename = dlg.FileName;
-          //      ImportFileName.Text = filename;
-          //  }
+            // Get the selected file name and display in a TextBox
+            if (result == true)
+            {
+                // Open document
+                string filename = dlg.FileName;
+                ImportFileName.Text = filename;
+            }
         }
 
         private void GridSplitter_DragDelta(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
@@ -75,6 +73,21 @@ namespace hactonUI
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
+        }
+        
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            run_cmd();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            string destinationFile = @"C:\Users\user\Downloads\hi.txt";
+
+            // To move a file or folder to a new location:
+            System.IO.File.Move(ImportFileName.Text, destinationFile);
 
         }
         private void run_cmd()
@@ -97,16 +110,6 @@ namespace hactonUI
             Console.WriteLine(output);
 
             Console.ReadLine();
-
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            run_cmd();
-        }
-
-        private void ImportFileName_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
         }
     }
