@@ -64,12 +64,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="importControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="importControl.Designer.cs">
-      <DependentUpon>importControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -89,9 +83,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="importControl.resx">
-      <DependentUpon>importControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -130,6 +121,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icons\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\gondalogo_filterd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\gondalogo_filterd2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\gondalogo_filterd3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

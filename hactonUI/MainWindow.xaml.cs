@@ -75,6 +75,21 @@ namespace hactonUI
         {
 
         }
+        
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            run_cmd();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            string destinationFile = @"C:\Users\user\Downloads\hi.txt";
+
+            // To move a file or folder to a new location:
+            System.IO.File.Move(ImportFileName.Text, destinationFile);
+
+        }
         private void run_cmd()
         {
 
@@ -96,11 +111,6 @@ namespace hactonUI
 
             Console.ReadLine();
 
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            run_cmd();
         }
     }
 }
