@@ -47,23 +47,25 @@ namespace hactonUI
 
         private void importClick(object sender, RoutedEventArgs e)
         {
-            // Create OpenFileDialog
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            GridMain.Children.Add(new ImportControl());
 
-            // Set filter for file extension and default file extension
-            dlg.DefaultExt = ".txt";
-            dlg.Filter = "Text documents (.txt)|*.txt";
+          //  // Create OpenFileDialog
+          //  Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
 
-            // Display OpenFileDialog by calling ShowDialog method
-            Nullable<bool> result = dlg.ShowDialog();
+          //  // Set filter for file extension and default file extension
+          //  dlg.DefaultExt = ".txt";
+          //  dlg.Filter = "Text documents (.txt)|*.txt";
 
-            // Get the selected file name and display in a TextBox
-            if (result == true)
-            {
-                // Open document
-                string filename = dlg.FileName;
-                ImportFileName.Text = filename;
-            }
+          //  // Display OpenFileDialog by calling ShowDialog method
+          //  Nullable<bool> result = dlg.ShowDialog();
+
+          //  // Get the selected file name and display in a TextBox
+          //  if (result == true)
+          //  {
+          //      // Open document
+          //      string filename = dlg.FileName;
+          //      ImportFileName.Text = filename;
+          //  }
         }
 
         private void GridSplitter_DragDelta(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
@@ -101,6 +103,11 @@ namespace hactonUI
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             run_cmd();
+        }
+
+        private void ImportFileName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
