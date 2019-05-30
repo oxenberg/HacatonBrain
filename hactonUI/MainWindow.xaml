@@ -41,7 +41,7 @@
         </Button>
         <Image HorizontalAlignment="Stretch" Margin="18,3,130,282" Source="icons/file.png" Grid.Row="1"/>
         <Button  x:Name="CloseButton" Content="x" Click="CloseButton_Click" HorizontalAlignment="Left" Margin="775,-6,-610,0" VerticalAlignment="Top" Width="25" FontSize="25" Background="{x:Null}" Height="35" FontWeight="Bold" BorderBrush="{x:Null}" RenderTransformOrigin="-7.8,4.857"/>
-        <TextBox x:Name="ImportFileName" HorizontalAlignment="Left" Height="23" Margin="430,75,-360,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Grid.Row="1"/>
+        <TextBox x:Name="ImportFileName" HorizontalAlignment="Left" Height="23" Margin="430,75,-360,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Grid.Row="1" TextChanged="ImportFileName_TextChanged"/>
         <Button  Content="                Analyze" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="189" Height="50" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Margin="1,75,0,195" FontWeight="Bold" FontSize="15" Grid.Row="1" Click="Button_Click_3">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
