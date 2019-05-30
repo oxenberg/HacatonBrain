@@ -31,8 +31,8 @@ namespace hactonUI.Pages
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
 
             // Set filter for file extension and default file extension
-            dlg.DefaultExt = ".txt";
-            dlg.Filter = "Text documents (.txt)|*.txt";
+            dlg.DefaultExt = ".wav";
+            dlg.Filter = "Video File (.wav)|*.wav";
 
             // Display OpenFileDialog by calling ShowDialog method
             Nullable<bool> result = dlg.ShowDialog();
@@ -45,14 +45,73 @@ namespace hactonUI.Pages
                 UplodeName.Text = filename;
             }
         }
+        private void importClick1(object sender, RoutedEventArgs e)
+        {
+            // Create OpenFileDialog
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+            // Set filter for file extension and default file extension
+            dlg.DefaultExt = ".wav";
+            dlg.Filter = "Video File (.wav)|*.wav";
+
+            // Display OpenFileDialog by calling ShowDialog method
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Get the selected file name and display in a TextBox
+            if (result == true)
+            {
+                // Open document
+                string filename = dlg.FileName;
+                Uplod1.Text = filename;
+            }
+        }
+        private void importClick2(object sender, RoutedEventArgs e)
+        {
+            // Create OpenFileDialog
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+            // Set filter for file extension and default file extension
+            dlg.DefaultExt = ".wav";
+            dlg.Filter = "Video File (.wav)|*.wav";
+
+            // Display OpenFileDialog by calling ShowDialog method
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Get the selected file name and display in a TextBox
+            if (result == true)
+            {
+                // Open document
+                string filename = dlg.FileName;
+                Uplod2.Text = filename;
+            }
+        }
+        private void importClick3(object sender, RoutedEventArgs e)
+        {
+            // Create OpenFileDialog
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+            // Set filter for file extension and default file extension
+            dlg.DefaultExt = ".wav";
+            dlg.Filter = "Video File (.wav)|*.wav";
+
+            // Display OpenFileDialog by calling ShowDialog method
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Get the selected file name and display in a TextBox
+            if (result == true)
+            {
+                // Open document
+                string filename = dlg.FileName;
+                Uplod3.Text = filename;
+            }
+        }
         private void saveClick(object sender, RoutedEventArgs e)
         {
             string destinationFile = @"C:C:\Users\yael4\OneDrive\Documents\yy.txt";
-            if (destinationFile != null)
-            {
+        
                 // To move a file or folder to a new location:
                 System.IO.File.Move(UplodeName.Text, destinationFile);
-            }
+           
         }
 
     }

@@ -14,16 +14,20 @@
                 <GradientStop Color="#FF8B481A" Offset="0.735"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="FileName" Text="File Path" Margin="33,84,471,302" FontWeight="Bold" FontSize="20" IsEnabled="False" Foreground="#FFFEFDF8" />
-        <TextBox x:Name="UplodeName" HorizontalAlignment="Left" Height="34" Margin="203,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="22"/>
-        <TextBlock x:Name="NumberPeople" Text="Number Person" Margin="33,145,402,241" FontWeight="Bold" FontSize="20" IsEnabled="False" Foreground="#FFFEFDF8" />
-        <TextBox x:Name="Number" HorizontalAlignment="Left" Height="34" Margin="203,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" FontSize="22" RenderTransformOrigin="0.437,-0.686"/>
-        <Button  Content="Upload" Click="importClick" Style="{StaticResource pageButton}" Height="50" Margin="30,298,339,72"/>
-        <Button  Content="Save" Click="saveClick" Style="{StaticResource pageButton}" Width="224" Height="50" Margin="329,298,0,72" HorizontalAlignment="Left" >
+        <TextBlock x:Name="FileName" Text="File All Speaker" Margin="14,44,441,347" FontWeight="Bold" FontSize="18" IsEnabled="False" Foreground="#FFFEFDF8" />
+        <TextBox x:Name="UplodeName" HorizontalAlignment="Left" Height="29" Margin="164,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="22"/>
+        <Button  Content="Upload File" Click="importClick" Style="{StaticResource uplodButton}" Margin="444,22,-17,347"/>
+        <Button  Content="Save" Click="saveClick" Style="{StaticResource pageButton}" Width="224" Height="50" Margin="195,295,0,75" HorizontalAlignment="Left" >
         </Button>
-        <TextBlock x:Name="Timer" Text="Time" Margin="33,202,490,180" FontWeight="Bold" FontSize="20" IsEnabled="False" Foreground="#FFFEFDF8" />
-        <TextBox x:Name="TimeStart" HorizontalAlignment="Left" Height="34" Margin="329,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" FontSize="22"/>
-        <TextBox x:Name="Timeend" HorizontalAlignment="Left" Height="34" Margin="203,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" FontSize="22"/>
+        <TextBlock x:Name="FileName1" Text="File Speaker 1" Margin="20,100,436,291" FontWeight="Bold" FontSize="20" IsEnabled="False" Foreground="#FFFEFDF8" />
+        <TextBox x:Name="Uplod1" HorizontalAlignment="Left" Height="29" Margin="164,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="22"/>
+        <Button  Content="Upload" Click="importClick1" Style="{StaticResource uplodButton}" Margin="444,78,-17,291"/>
+        <Button  Content="Upload" Click="importClick2" Style="{StaticResource uplodButton}" Margin="444,134,-17,235"/>
+        <TextBox x:Name="Uplod2" HorizontalAlignment="Left" Height="29" Margin="164,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="22"/>
+        <TextBlock x:Name="FileName2" Text="File Speaker 2" Margin="20,156,436,235" FontWeight="Bold" FontSize="20" IsEnabled="False" Foreground="#FFFEFDF8" />
+        <TextBox x:Name="Uplod3" HorizontalAlignment="Left" Height="29" Margin="164,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="22"/>
+        <Button  Content="Upload" Click="importClick3" Style="{StaticResource uplodButton}" Margin="444,195,-17,174"/>
+        <TextBlock x:Name="FileName3" Text="File Speaker 3" Margin="20,217,436,174" FontWeight="Bold" FontSize="20" IsEnabled="False" Foreground="#FFFEFDF8" />
 
     </Grid>
 </Page>

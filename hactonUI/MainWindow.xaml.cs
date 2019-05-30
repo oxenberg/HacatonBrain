@@ -25,6 +25,8 @@ namespace hactonUI
         public MainWindow()
         {
             InitializeComponent();
+            Frame.Content = new FrontPage();
+
         }
 
         private void Grid(object sender, MouseButtonEventArgs e)
