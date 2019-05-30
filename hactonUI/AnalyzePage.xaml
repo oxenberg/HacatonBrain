@@ -1,0 +1,25 @@
+﻿<Page x:Class="hactonUI.AnalyzePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:hactonUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="600"
+      Title="AnalyzePage">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF2C2323" Offset="0.061"/>
+                <GradientStop Color="#FF8B481A" Offset="0.735"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button  Content="Analyze" Click="AnalyzeClick" Style="{StaticResource pageButton}" Width="205" Height="50" Margin="184,68,0,302" HorizontalAlignment="Left" />
+        <Button Content="Time Speaker" Click="TimeClick" Style="{StaticResource pageButton}" Margin="342,190,45,180"/>
+        <Button Content="Correlation" Click="CorrClick" Style="{StaticResource pageButton}" Height="50" Margin="342,314,45,56"/>
+        <Button Content="Power graph" Click="PowerGraphClick" Style="{StaticResource pageButton}" Height="50" Margin="46,314,334,56"/>
+        <Button Content="Frequency graph" Click="FrequencyClick" Style="{StaticResource pageButton}" Height="50" Margin="46,190,334,180"/>
+
+    </Grid>
+</Page>
