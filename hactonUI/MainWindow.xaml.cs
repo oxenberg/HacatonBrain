@@ -32,10 +32,6 @@ namespace hactonUI
             this.DragMove();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            
-        }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
@@ -69,11 +65,6 @@ namespace hactonUI
 
         private void ExportButton(object sender, RoutedEventArgs e)
         {
-            string destinationFile = @"C:\Users\user\Downloads\hi.txt";
-
-            // To move a file or folder to a new location:
-            System.IO.File.Move(ImportFileName.Text, destinationFile);
-
         }
         private void myFrame_ContentRendered(object sender, EventArgs e)
         {

@@ -22,10 +22,8 @@
 
         <Image HorizontalAlignment="Stretch" Margin="18,3,130,282" Source="icons/file.png" Grid.Row="1"/>
         <Button  x:Name="CloseButton" Content="x" Click="CloseButton_Click" HorizontalAlignment="Left" Margin="775,-6,-610,0" VerticalAlignment="Top" Width="25" FontSize="25" Background="{x:Null}" Height="35" FontWeight="Bold" BorderBrush="{x:Null}" RenderTransformOrigin="-7.8,4.857"/>
-        <TextBox x:Name="ImportFileName" HorizontalAlignment="Left" Height="23" Margin="-331,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Grid.Row="1"/>
         <Button  Style="{StaticResource MainButton}" Content="                Analyze" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="189" Height="50" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Margin="1,75,0,195" FontWeight="Bold" FontSize="15" Grid.Row="1" Click="AnalyzeButton"/>
         <Button  Style="{StaticResource MainButton}" Content="              Export" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="189" Height="50" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Margin="0,160,0,110" FontWeight="Bold" FontSize="15" Grid.Row="1" Click="ExportButton"/>
-
         <Button  Style="{StaticResource MainButton}" Content="                 Settings " HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="189" Height="50" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Margin="0,240,0,30" FontWeight="Bold" FontSize="15" Grid.Row="1" Click="SettingsButton"/>
 
         <GridSplitter x:Name="Filter" HorizontalAlignment="Left" Height="50" Margin="0,125,0,0" VerticalAlignment="Top" Width="5" Grid.RowSpan="2" DragDelta="GridSplitter_DragDelta" Background="#FF8A481A"/>
@@ -37,8 +35,9 @@
                 <ImageBrush ImageSource="icons/gondalogo_filterd3.png" Stretch="UniformToFill" Opacity="0.5"/>
             </Image.OpacityMask>
         </Image>
-        <Frame x:Name="Frame"  ContentRendered="myFrame_ContentRendered"  HorizontalAlignment="Left" Height="422" Margin="195,29,-610,-1" VerticalAlignment="Top" Width="605" Grid.RowSpan="2"/>
 
+        <Frame x:Name="Frame"  ContentRendered="myFrame_ContentRendered"  HorizontalAlignment="Left" Height="422" Margin="190,28,-605,0" VerticalAlignment="Top" Width="605" Grid.RowSpan="2"/>
+        
     </Grid>
 
 </Window>
